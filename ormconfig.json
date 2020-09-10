@@ -1,0 +1,24 @@
+{
+   "type": "mysql",
+   "host": "localhost",
+   "port": 3306,
+   "username": "root",
+   "password": "root",
+   "database": "ts-api",
+   "synchronize": false,
+   "logging": false,
+   "entities": [
+      "build/database/entity/**/*.{ts,js}"
+   ],
+   "migrations": [
+      "build/database/migration/**/*.{ts,js}"
+   ],
+   "subscribers": [
+      "build/database/subscriber/**/*.{ts,js}"
+   ],
+   "cli": {
+      "entitiesDir": "src/database/entity",
+      "migrationsDir": "src/database/migration",
+      "subscribersDir": "src/database/subscriber"
+   }
+}
